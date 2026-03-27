@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+                              <!-- remixicon link -->
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section id="navbar">
+
+    <div class="header">
+        <div class="logo">
+            <img src="ChatGPT Image Feb 16, 2026, 03_00_01 PM.png" width="140px" alt="">
+        </div>
+
+         
+        <ul class="headerContent">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <!-- <li>
+                <a href="#category">Categories</a>
+            </li> -->
+            <li>
+                <a href="#product">Shop</a>
+            </li>
+            <li>
+                <a href="">Why Us</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+           
+            
+
+             <!-- <div class="drop">
+                <button class="btn"> <i class="ri-user-line"></i> Account</button>
+                <div class="dropdown-content">
+                    <button>sign in</button>
+                    <h4><i class="ri-user-line"></i> My Account</h4>
+                    <h4><i class="ri-shopping-bag-3-line"></i> Orders</h4>
+                    <h4><i class="ri-heart-line"></i> Whishlist</h4>
+                </div>
+            </div> -->
+
+            <div class="search">
+                <input type="text" placeholder="Search product" id="searchBar">
+                <label for="" class="searchIcon"><i class="ri-search-line"></i></label>
+            </div>
+            
+
+            <!-- <h3><a href=""><span><i class="ri-shopping-cart-line"></i></span> Cart</a></h3> -->
+            
+        </ul>
+        <div class="search-bar" >
+                <input type="text" placeholder="Search product" id="searchBars">
+                <label class="search-submit" style="cursor: pointer;"><i class="ri-search-line" id="icon"></i>
+                </label>
+            </div>
+
+        <div class="menu" id="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="body reveal">
+        <div class="hero">
+            <div class="hero-collection">
+                <div class="bb">
+                    <p>New collection</p>
+                </div>
+                <h1>Elevate Your Lifestyle</h1>
+                <p class="text">Discover curated collections of hair accessories, fashion, kitchen 
+                essentials, and home décor that transform everyday moments into extraordinary experiences.</p>
+                <div class="btnn">
+                    <a href="" class="btn1">Shop Now</a>
+                    <a href="" class="btn2">Explore</a>
+                </div>
+            </div>
+
+            <div class="image">
+                <div class="premium">
+                    <div class="star">
+                        <div class="h1">✨</div>
+                         <div class="dd">
+                        <h3>Premium Quality</h3>
+                        <p>Handpicked items</p>
+                    </div>
+                    </div>
+                   
+                </div>
+
+
+
+                <div class="free">
+                    <div class="bus">
+                        <div class="h1">🚚</div>
+                         <div class="dd">
+                        <h4>Free Shipping</h4>
+                        <p>On orders over $50</p>
+                    </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- <section class="category" id="category">
+
+        <div class="shop-text">
+            <h1>Shop by Categorys</h1>
+            <p>Explore our carefully curated collections</p>
+        </div>
+        <div class="shop-container">
+                    <div class="hair" onclick="window.location.href='#product'" style="cursor: pointer;">
+                <h1>Hair Accessories</h1>
+                <div class="shpp">
+                    <h3>Hair Accessories</h3>
+                    <a href="#product" class="shop-btn">Shop Now</a>
+                </div>
+            </div>
+            
+
+              <div class="cloth" onclick="window.location.href = '#product'" style="cursor: pointer;">
+                <h1>Clothing</h1>
+                <div class="shpp">
+                    <h3>Clothing</h3>
+                    <a href="#product" class="shop-btn">Shop Now</a>
+                </div>
+            </div>
+
+             <div class="kitchen" onclick="window.location.href = '#product'" style="cursor: pointer;">
+                <h1>Kitchen Collection</h1>
+    <div class="shop-content">
+        <h3>Kitchen Collection</h3>
+        <a href="#product" class="shop-btn">Shop Now</a>
+    </div>
+</div>
+
+
+            <div class="home" onclick="window.location.href = '#product'" style="cursor: pointer;">
+                <h1>Home Decoration</h1>
+                <div class="shopp">
+                    <h3>home decoration</h3>
+                    <a href="#product" class="shop-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <section class="product" id="product">
+        <div class="data reveal">
+            <div class="top">
+                <h1>Featured Products</h1>
+                <p>Handpicked favorites from our collection</p>
+
+                 <div class="category-filters">
+                <button class="filter-btn active" onclick="filterByCategory('all')">All</button>
+                <!-- <button class="filter-btn" onclick="filterByCategory('cosmetic')">Hair</button> -->
+                <button class="filter-btn" onclick="filterByCategory('Electronic')">Electronics</button>
+                <button class="filter-btn" onclick="filterByCategory('Clothing & Fashion')">Clothing</button>
+                <button class="filter-btn" onclick="filterByCategory('Home Decor')">Home Decoration</button>
+                <!-- <button class="filter-btn" onclick="filterByCategory('kitchen')">Kitchen</button> -->
+                <button class="filter-btn" onclick="filterByCategory('Home & Furniture')">Furniture</button>
+                 <button class="filter-btn" onclick="filterByCategory('Accessories')">Accessories</button>
+                 <button class="filter-btn" onclick="filterByCategory('Beauty & Personal Care')">Beauty & Personal Care</button>
+            </div>
+            </div>
+        </div>
+            </div>
+          
+            <div class="body1">
+                <div id="root"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <div class="contact-container reveal">
+             <h1>Contact Us</h1>
+        </div>
+
+        <div class="box12">
+            <div class="contact form">
+                <h3>Send a Message</h3>
+                <form action="" method="post">
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" required placeholder="First Name">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" required>
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="email" required placeholder="First Name">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Mobile</span>
+                                <input type="number" required>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea name="" id="" placeholder="Write your message here..."></textarea>
+                            </div>
+                        </div>
+
+                         <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>Akobo, Ibadan Oyo state</p>
+                    </div>
+
+                     <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="loremipsum@gmail.com">loremipsum@gmail.com</a>
+                    </div>
+
+                     <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel: +234000000">+234 000 0000</a>
+                    </div>
+                    <ul class="sci">
+                        <li><a href=""><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact map" id="map">
+               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+               1d31675.332993347434!2d6.2703055!3d7.07760195!2m3!1f0!2f0!3f0!3m2!
+               1i1024!2i768!4f13.1!3m3!1m2!1s0x10467d1313bdc737%3A0xc515cb7b61236
+               da8!2sAuchi%2C%20Edo!5e0!3m2!1sen!2sng!4v1774594370056!5m2!1sen!2s
+               ng" style="border:0;" allowfullscreen="" loading="lazy" 
+               referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+
+        <p class="year">© <span id="year"></span> Doramytech. All rights reserved.</p>
+    </section>
+
+    <script src="index.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCESWKBfSjHYkSq2NAU9ZQw7267iFuqC0k&callback=initMap"
+ async defer></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
