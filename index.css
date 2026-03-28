@@ -399,103 +399,18 @@ body.no-scroll {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
 }
 
-
-.cloth{
-    border: 1px solid transparent;
-    height: 27rem;
-    width: 100%;
-    border-radius: 20px;
-    background-image: url(images/cloth.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transition: background-position 0.7s ease;
-    
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-.cloth:hover{
-    background-position:right center ;
-}
-.shpp{
-    position: absolute;
-    bottom: -80px;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
-    transition: bottom 0.5s ease;
-}
-.cloth:hover .shpp {
-    bottom: 0;                 /* Slide to bottom of card */
-}
-.shpp h3{
-    color: white;
-    text-transform: capitalize;
-     position: relative;
-    bottom: 15px;
-}
-.shpp a{
-    text-decoration: none;
-}
-.cloth h1{
-    position: relative;
-    top: 17rem;
-    color: white;
-    padding: 20px;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
-}
-
-
-
-
-.kitchen {
-    border: 1px solid transparent;
-    height: 27rem;
-    width: 100%;
-    border-radius: 20px;
-    background-image: url(images/kitchen.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transition: background-position 0.7s ease;
-    
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.kitchen:hover {
-    background-position: right center;
-}
-
 /* Content container */
 .shop-content {
     position: absolute;
-    bottom: -100px;            /* Start below the card */
+    bottom: -100px;            
     left: 0;
     width: 100%;
     padding: 20px;
     text-align: center;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));  /* Fade to black */
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));  
     transition: bottom 0.4s ease;
 }
 
-/* Slide up on hover */
-.kitchen:hover .shop-content {
-    bottom: 0;                 /* Slide to bottom of card */
-}
-.kitchen h1{
-    position: absolute;
-    top: 65%;
-    left: 12%;
-     color: white;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);   
-}
 
 .shop-content h3 {
     color: white;
