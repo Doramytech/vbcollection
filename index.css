@@ -518,7 +518,7 @@ body.no-scroll {
 }
 
 .shop-btn:hover {
-    transform: scale(1.05);    /* Slight grow on hover */
+    transform: scale(1.05);    
 }
 
 .home {
@@ -551,7 +551,7 @@ body.no-scroll {
     transition: bottom 0.5s ease;
 }
 .home:hover .shopp {
-    bottom: 0;                 /* Slide to bottom of card */
+    bottom: 0;                
 }
 .shopp h3{
     color: white;
@@ -929,7 +929,7 @@ body.no-scroll {
 @media (max-width: 768px) {
   .premium,
   .free {
-    display: none;
+    display: static;
   }
       .hero h1{
         font-size: 3rem;
