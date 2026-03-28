@@ -38,11 +38,25 @@
                 <a href="#contact">Contact</a>
             </li>
            
+            
+
+             <!-- <div class="drop">
+                <button class="btn"> <i class="ri-user-line"></i> Account</button>
+                <div class="dropdown-content">
+                    <button>sign in</button>
+                    <h4><i class="ri-user-line"></i> My Account</h4>
+                    <h4><i class="ri-shopping-bag-3-line"></i> Orders</h4>
+                    <h4><i class="ri-heart-line"></i> Whishlist</h4>
+                </div>
+            </div> -->
 
             <div class="search">
                 <input type="text" placeholder="Search product" id="searchBar">
                 <label for="" class="searchIcon"><i class="ri-search-line"></i></label>
             </div>
+            
+
+            <!-- <h3><a href=""><span><i class="ri-shopping-cart-line"></i></span> Cart</a></h3> -->
             
         </ul>
         <div class="search-bar" >
@@ -104,7 +118,49 @@
         </div>
     </section>
     
-   
+    <!-- <section class="category" id="category">
+
+        <div class="shop-text">
+            <h1>Shop by Categorys</h1>
+            <p>Explore our carefully curated collections</p>
+        </div>
+        <div class="shop-container">
+                    <div class="hair" onclick="window.location.href='#product'" style="cursor: pointer;">
+                <h1>Hair Accessories</h1>
+                <div class="shpp">
+                    <h3>Hair Accessories</h3>
+                    <a href="#product" class="shop-btn">Shop Now</a>
+                </div>
+            </div>
+            
+
+              <div class="cloth" onclick="window.location.href = '#product'" style="cursor: pointer;">
+                <h1>Clothing</h1>
+                <div class="shpp">
+                    <h3>Clothing</h3>
+                    <a href="#product" class="shop-btn">Shop Now</a>
+                </div>
+            </div>
+
+             <div class="kitchen" onclick="window.location.href = '#product'" style="cursor: pointer;">
+                <h1>Kitchen Collection</h1>
+    <div class="shop-content">
+        <h3>Kitchen Collection</h3>
+        <a href="#product" class="shop-btn">Shop Now</a>
+    </div>
+</div>
+
+
+            <div class="home" onclick="window.location.href = '#product'" style="cursor: pointer;">
+                <h1>Home Decoration</h1>
+                <div class="shopp">
+                    <h3>home decoration</h3>
+                    <a href="#product" class="shop-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
     <section class="product" id="product">
         <div class="data reveal">
             <div class="top">
@@ -143,39 +199,40 @@
                 <h3>Send a Message</h3>
                 <form action="https://api.web3forms.com/submit" method="Post">
                     <input type="hidden" name="access_key" value="1df78677-f9d9-400b-884e-b9b1b24741b6">
-                    <input type="hidden" name="subject" value="New Contact Form Message">
-                    <input type="hidden" name="redirect" value="https://vbcollection.vercel.app/">
-                     <!-- Honeypot Spam Protection -->
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                     <!-- Optional: Custom subject line in email -->
+    <input type="hidden" name="subject" value="New Contact Form Message">
+    
+
                     <div class="formBox">
                         <div class="row50">
                             <div class="inputBox">
                                 <span>First Name</span>
-                                <input type="text" required placeholder="First Name">
+                                <input type="text" required placeholder="First Name" name="subject">
                             </div>
 
                             <div class="inputBox">
                                 <span>Last Name</span>
-                                <input type="text" required>
+                                <input type="text" required name="subject">
                             </div>
                         </div>
 
                         <div class="row50">
                             <div class="inputBox">
                                 <span>Email</span>
-                                <input type="email" required placeholder="First Name">
+                                <input type="email" name="email" required placeholder="First Name">
                             </div>
 
                             <div class="inputBox">
                                 <span>Mobile</span>
-                                <input type="number" required>
+                                <input type="number" name="tel" required>
                             </div>
                         </div>
 
                         <div class="row100">
                             <div class="inputBox">
                                 <span>Message</span>
-                                <textarea name="" id="" placeholder="Write your message here..."></textarea>
+                                <textarea name="message" id="" placeholder="Write your message here..."></textarea>
+                                <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
                             </div>
                         </div>
 
@@ -186,13 +243,15 @@
                         </div>
                     </div>
                 </form>
+
+                <div id="result" style="margin-top: 10px; text-align: center; color: var(--primary);"></div>
             </div>
             <div class="contact info">
                 <h3>Contact Info</h3>
                 <div class="infoBox">
                     <div>
                         <span><ion-icon name="location"></ion-icon></span>
-                        <p>Second Bawak by D Gape Hotel around Campus 2</p>
+                        <p>Akobo, Ibadan Oyo state</p>
                     </div>
 
                      <div>
@@ -202,7 +261,7 @@
 
                      <div>
                         <span><ion-icon name="call"></ion-icon></span>
-                        <a href="tel: +234000000">+234 7016916802</a>
+                        <a href="tel: +234000000">+234 000 0000</a>
                     </div>
                     <ul class="sci">
                         <li><a href=""><ion-icon name="logo-tiktok"></ion-icon></a></li>
