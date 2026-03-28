@@ -148,14 +148,7 @@
 .search-bar{
     display: none;
 }
-/* .search-bar:focus-within{
-    width: 250px;
-}
 
-.search-bar:focus-within input{
-    width: 200px;
-    margin-left: 10px;
-} */
 .searchIcon{
     position: absolute;
     right: 12px;
@@ -929,7 +922,7 @@ body.no-scroll {
 @media (max-width: 768px) {
   .premium,
   .free {
-    display: static;
+    display: block;
   }
       .hero h1{
         font-size: 3rem;
