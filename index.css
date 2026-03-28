@@ -926,7 +926,7 @@ body.no-scroll {
 .free{
     display:block;
     position:relative;
-    top:60px;
+    top:5%;
 {
       .hero h1{
         font-size: 3rem;
