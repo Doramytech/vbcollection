@@ -18,28 +18,28 @@ menu.addEventListener("click", () => {
 const products = [
             {
                 id: "0",
-                image: 'img/WhatsApp Image 2026-03-16 at 9.34.51 PM (1).jpeg',
+                image: 'WhatsApp Image 2026-03-16 at 9.34.51 PM (1).jpeg',
                 title: 'Fluffy fur cap',
                 price: 6500,
                 category: 'Clothing & Fashion'
             },
             {
                 id: "1",
-                image: 'img/WhatsApp Image 2026-03-16 at 9.35.03 PM (2).jpeg',
+                image: 'WhatsApp Image 2026-03-16 at 9.35.03 PM (2).jpeg',
                 title: 'Dignife woman perfume',
                 price: 10500,
                 category: 'Cosmetic'
             },
             {
                 id: "2",
-                image: 'img/WhatsApp Image 2026-03-16 at 9.35.03 PM.jpeg',
+                image: 'WhatsApp Image 2026-03-16 at 9.35.03 PM.jpeg',
                 title: 'Shoe rack',
                 price: 21000,
                 category: 'furniture'
             },
             {
                 id: "3",
-                image: 'img/WhatsApp Image 2026-03-16 at 9.35.04 PM (1).jpeg',
+                image: 'WhatsApp Image 2026-03-16 at 9.35.04 PM (1).jpeg',
                 title: '10 inches LCD writting tab',
                 price: 6000,
                 category: 'Electronics'
