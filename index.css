@@ -924,9 +924,7 @@ body.no-scroll {
     display: block;
   }
 .free{
-    display:block;
-    position:absolute;
-    top:100px;
+    display:none;
 {
       .hero h1{
         font-size: 3rem;
