@@ -638,9 +638,10 @@ body.no-scroll {
 
 #root{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px 0px;
+    width: 100%;
 }
 .box{
     border: 1px solid #eee;
@@ -665,6 +666,10 @@ body.no-scroll {
     align-items: center;
     justify-content: center;
     background: #f9f9f9;
+}
+.img-box img{
+    width: 100%;
+    object-fit: cover;
 }
 .images{
     width: 100%;
@@ -713,24 +718,18 @@ body.no-scroll {
 
 .body1{
     padding: 0 5em;
+    width: 100%;
+    box-sizing: border-box;
+    
 }
 
-
-
-/* COMMON STYLE */
-.contact{
-    padding: 40px;
-    background: var(--white);
-    border-radius: 10px;
-    box-shadow: 0px 5px 35px rgba(0,0,0,0.15);
-}
 
 
 #contact{
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     width: 100%;
-    min-height: 100vh;   /* ✅ FIX 1: give height */
-    padding: 50px 5em;  /* optional spacing */
+    min-height: 100vh;   
+    padding: 50px 5em; 
     position: relative;
 }
 
@@ -755,12 +754,11 @@ body.no-scroll {
         "form info"
         "form map";
     gap: 20px;
-
     width: 100%;
-    max-width: 90rem;
-    margin: 40px auto;  /* ✅ center it */
-
-    position: relative; /* ❌ remove absolute */
+    max-width: 100rem;
+    margin: 40px auto; 
+    width: 100%;
+    position: relative;
 }
 
 /* GRID AREAS */
@@ -776,12 +774,13 @@ body.no-scroll {
     grid-area: map;
 }
 
-/* COMMON STYLE */
+
 .contact{
     padding: 40px;
     background: var(--white);
     border-radius: 10px;
     box-shadow: 0px 5px 35px rgba(0,0,0,0.15);
+    width: 100%;
 }
 .formBox{
     position: relative;
@@ -899,7 +898,7 @@ body.no-scroll {
     background: white;
     flex-direction: column;
     padding-top: 120px;
-    transform: translateX(100%);  /* Hidden off-screen to the right */
+    transform: translateX(100%);
     transition: 0.4s ease-in-out;
     z-index: 999; 
     box-shadow: -5px 0 15px rgba(0,0,0,0.1);
@@ -931,6 +930,7 @@ body.no-scroll {
     .search-bar:focus-within{
     width: 90vw;
 }
+
 
 }
 @media (max-width:670px) {
@@ -968,4 +968,32 @@ body.no-scroll {
     .contact{
         padding: 30px;
     }
+}
+@media (max-width:475px) {
+    .body1{
+        padding: 10px;
+
+    }
+
+    #root {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 10px;
+    width: 100%; 
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  .img-box {
+    height: 150px; 
+  }
+  .box12{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
 }

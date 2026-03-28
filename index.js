@@ -8,8 +8,7 @@ menu.addEventListener("click", () => {
     
     headerContent.classList.toggle("open");
   
-    menu.classList.toggle("open");
-    
+    menu.classList.toggle("active");
 
     body.classList.toggle("no-scroll");
     
