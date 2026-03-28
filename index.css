@@ -925,7 +925,7 @@ body.no-scroll {
   }
 .free{
     display:block;
-    position:relative;
+    position:absolute;
     top:100px;
 {
       .hero h1{
