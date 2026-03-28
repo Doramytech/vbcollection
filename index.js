@@ -462,7 +462,7 @@ function addMarker({ coordinate, iconImage }) {
 }
 
 const form = document.getElementById('form');
-const submitBtn = form.querySelector('button[type="submit"]');
+const submitBtn = form.querySelector('input[type="submit"]');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
